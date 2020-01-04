@@ -1,0 +1,22 @@
+{{!-- Temp Styling --}}
+<style>
+    .filter-container {
+        display: flex;
+        justify-content: center;
+        padding: 20px 30px;
+    }
+
+    .filter-container .ghost-button {
+        background: rgba(31, 31, 31, 0.746);
+    }
+</style>
+
+<div class="filter-container">
+    <a class="ghost-button" href={{filterLink}}>{{filterText}}</a>
+</div>
+
+<div class="card-container">
+    {{#each tweets}}
+    {{> card tweet=this }}
+    {{/each}}
+</div>

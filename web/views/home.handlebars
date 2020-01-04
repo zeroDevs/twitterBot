@@ -1,0 +1,44 @@
+<style>
+    .home-container {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .content {
+        width: 30vw;
+        margin: 0, auto;
+        background: rgba(0, 0, 0, 0.459);
+        border-radius: 10px;
+        border: 1px solid #fff;
+        color: rgb(207, 207, 207);
+        padding: 20px 30px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<div class="home-container">
+    <div class="content">
+        <p>
+            tweetZero is a twitter bot still under development, coded for the Zero To Mastery #30DayProject.
+            Functionality at this point is still pretty limited, the following list will be update when new features
+            are implemented:
+        </p>
+        <ul>
+            <li>Fetch all tweets with the #30DayProject hashtag</li>
+            <li>Store the tweets in a MongoDB</li>
+            <li>Using Express and Handlebars, display the tweets when the /30DayProject route is called.</li>
+        </ul>
+        <div class="button-container">
+            <a class="ghost-button" href="/30DayProject">#30DayProject Tweets</a>
+        </div>
+    </div>
+
+</div>

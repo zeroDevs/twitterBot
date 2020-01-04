@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    background-color: #4d4d4d;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23f7ab29' fill-opacity='0.49' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #282828;
+    color: #ffffff;
+    padding: 10px 50px 5px 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.563);
+    -webkit-box-shadow: 0px -5px 5px 10px rgba(240, 240, 240, 0.23);
+    -moz-box-shadow: 0px -5px 5px 10px rgba(240, 240, 240, 0.23);
+    box-shadow: 0px -5px 5px 10px rgba(240, 240, 240, 0.23);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand i {
+    font-size: 35px;
+    color: #f17704;
+}
+
+.brand h1 {
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: "Courgette", cursive;
+}
+
+.ghost-button {
+    display: inline-block;
+    width: 45%;
+    padding: 8px;
+    color: #9c9c9c;
+    border: 1px solid #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.ghost-button span {
+    display: block;
+}
+
+.ghost-button:hover {
+    background-color: #343e48;
+    color: #fff;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+#content {
+    padding: 20px 50px;
+}
+
+/* Card Styling */
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    background: #00000088;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.card-banner {
+    width: 100%;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-content {
+    padding: 15px 35px;
+}
+
+.card-content h1 {
+    margin: 5px;
+    color: #f17704;
+}
+
+.card-content p {
+    min-height: 63px;
+    margin-top: 5px;
+    color: rgb(182, 182, 182);
+}
+
+.card .avatar {
+    border-radius: 50%;
+    padding: 5px;
+    background: #00000088;
+    margin-top: -55px;
+}
+
+.card-footer {
+    background-color: #343e48;
+    padding: 15px;
+    border-radius: 0 0 9px 9px;
+}
+
+.tweet-stats {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+#likes i {
+    color: rgb(172, 4, 4);
+    margin-right: 15px;
+}
+
+#retweeted i {
+    color: rgb(4, 87, 197);
+    margin-right: 5px;
+}
+
+/* .card .banner {
+    width: auto;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card .content {
+    padding: 15px 35px;
+}
+
+.card .nameplate {
+    display: flex;
+    margin-top: -55px;
+    align-items: flex-end;
+}
+
+.card h1 {
+    margin: 5px;
+    color: #f17704;
+}
+
+.card p {
+    margin: 5px;
+}
+
+*/

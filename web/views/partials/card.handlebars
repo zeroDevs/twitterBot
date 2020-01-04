@@ -1,0 +1,41 @@
+<div class="card">
+    <div class="card-banner" style="background-image: url({{tweet.user_details.profile_banner_url}})">
+
+    </div>
+
+    <div class="card-content">
+        <img class="avatar" src={{tweet.user_details.avatar_url}} alt={{tweet.user_details.name}} />
+        <a href="/30dayproject/{{tweet.user_details.screen_name}}">
+            <h1><i class="fas fa-at"></i>{{tweet.user_details.screen_name}}</h1>
+        </a>
+        <p>{{tweet.tweet_details.tweetText}}</p>
+
+        <div class="controls">
+            <a class="ghost-button" target="_blank"
+                href="https://twitter.com/{{tweet.user_details.screen_name}}/status/{{tweet.tweet_details.id_str}}">
+                <span>View This</span>
+                Tweet on twitter
+            </a>
+            <a class="ghost-button" href="/30dayproject/{{tweet.user_details.screen_name}}">
+                <span>{{tweet.user_details.screen_name}}</span>
+                #30DayProject Tweets
+            </a>
+        </div>
+    </div>
+
+    <div class="card-footer">
+        <div class="tweet-stats">
+            <div id="created">
+                <i class="fas fa-clock"></i> {{tweet.tweet_details.created_at}}
+            </div>
+            <div id="retweeted">
+                <i class="fas fa-retweet"></i> {{tweet.tweet_details.retweet_count}}
+            </div>
+            <div id="likes">
+                <i class="fas fa-heart"></i> {{tweet.tweet_details.favorite_count}}
+            </div>
+
+        </div>
+    </div>
+
+</div>

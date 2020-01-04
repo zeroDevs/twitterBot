@@ -1,0 +1,29 @@
+{
+  "name": "twitterbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattCSmith/twitterBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattCSmith/twitterBot/issues"
+  },
+  "homepage": "https://github.com/MattCSmith/twitterBot#readme",
+  "dependencies": {
+    "cron": "^1.7.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "file-system": "^2.2.2",
+    "handlebars": "^4.5.3",
+    "mongoose": "^5.8.4",
+    "twit": "^2.2.11"
+  }
+}

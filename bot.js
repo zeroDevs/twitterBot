@@ -9,7 +9,7 @@ const TweetsService = require('./database/services/tweets.service');
 
 const mongoose = require('mongoose');
 mongoose
-  .connect(process.env.MONGO_DB_DEV, {
+  .connect(process.env.MONGO_DB, {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true,

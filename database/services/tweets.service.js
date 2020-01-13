@@ -19,7 +19,7 @@ class TweetsService {
         try {
             const tweets = await Tweets.find({
                 "user_details.screen_name": username
-            });
+            }).sort({ "tweet_details.created_at": -1 });
             return tweets;
         } catch (error) {
             console.log(`*displayUsersTweets*: ${error}`);
@@ -29,8 +29,9 @@ class TweetsService {
     async saveTweet(tweetObj) {
         try {
             const tweet = await Tweets.findOne({
-                tweet_details: { id: tweetObj.id }
+                "tweet_details.id_str": tweetObj.id_str
             });
+
             if (!tweet) {
                 const slicedDate = tweetObj.created_at.split(" ");
 

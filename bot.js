@@ -20,13 +20,8 @@ console.log('BOT IS RUNNING');
 
 const stream = client.stream('statuses/filter', { track: '#30DayProject' });
 stream.on('tweet', tweet => {
-<<<<<<< HEAD
   if (!tweet.text.startsWith('RT @')) {
     TweetsService.saveTweet(tweet);
     console.log('Updating Tweets');
   } else console.log('Tweet is a RT');
-=======
-  TweetsService.saveTweet(tweet);
-  console.log('Updating Tweets');
->>>>>>> e465ea9501afe02274421a0dcd619539ede02726
 });

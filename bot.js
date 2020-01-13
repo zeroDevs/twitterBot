@@ -24,7 +24,6 @@ new CronJob(
         let params = {
             q: "#30DayProject",
             result_type: "recent",
-            lang: "en",
             count: 100
         };
 
